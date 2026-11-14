@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Celest Christmas – decorațiuni de Crăciun handmade.">
+  <title>Celest Christmas | Decorațiuni handmade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Celest Christmas, pagina principală">
+      <span class="brand-mark">✦</span>
+      <span>Celest <em>Christmas</em></span>
+    </a>
+    <nav class="main-nav">
+      <a href="#produse">Colecție</a>
+      <a href="#despre">Povestea noastră</a>
+    </nav>
+    <button class="cart-button" id="cart-toggle" aria-label="Deschide coșul">
+      <span>Coșul meu</span><span class="cart-count" id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">DECORAȚIUNI HANDMADE · CU DRAG, PENTRU SĂRBĂTORI</p>
+        <h1>Un strop de magie<br><em>în fiecare colț.</em></h1>
+        <p class="hero-copy">Decorațiuni create manual, cu atenție la detalii și cu bucuria Crăciunului în suflet.</p>
+        <a class="primary-link" href="#produse">Descoperă colecția <span>→</span></a>
+      </div>
+      <div class="hero-ornament" aria-hidden="true">
+        <span class="ornament-star">✧</span><span class="ornament-leaf">❋</span>
+        <span class="ornament-word">handmade<br>with love</span>
+      </div>
+    </section>
+
+    <section class="collection section-wrap" id="produse">
+      <div class="section-heading">
+        <div><p class="eyebrow">COLECȚIA NOASTRĂ</p><h2>Lucruri mici, <em>bucurii mari.</em></h2></div>
+        <p class="section-note">Fiecare piesă este unică și realizată manual.</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="category-tabs" role="group" aria-label="Filtrează produsele">
+          <button class="filter-button active" data-category="toate">Toate</button>
+          <button class="filter-button" data-category="coronite">Coronițe</button>
+          <button class="filter-button" data-category="carti">Cărți cu floare</button>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Caută un produs..." aria-label="Caută un produs"></label>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>Nu am găsit produse pentru căutarea ta.</p>
+    </section>
+
+    <section class="about" id="despre">
+      <div class="about-symbol">✦</div>
+      <p class="eyebrow">FĂCUT CU DRAG</p>
+      <h2>Crăciunul stă în <em>detalii.</em></h2>
+      <p>Celest Christmas adună decorațiuni handmade create pentru a aduce căldură, culoare și un strop de magie în casa ta.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">✦</span><span>Celest <em>Christmas</em></span></a>
+    <p>Decorațiuni handmade, create cu drag.</p>
+    <small>© <span id="year"></span> Celest Christmas</small>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Coșul de cumpărături" aria-hidden="true">
+    <div class="drawer-heading"><div><p class="eyebrow">COLECȚIA TA</p><h2>Coșul meu</h2></div><button id="cart-close" class="close-button" aria-label="Închide coșul">×</button></div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <p class="cart-help">Prețurile vor fi confirmate la plasarea comenzii.</p>
+      <button class="checkout-button" id="order-button">Pregătește comanda</button>
+      <p class="checkout-note">Comanda se poate copia și trimite apoi prin mesaj.</p>
+    </div>
+  </aside>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+CELEST CHRISTMAS — instrucțiuni
+
+1. Descarcă și dezarhivează Celest-Christmas.zip.
+2. Deschide folderul Celest-Christmas în Visual Studio Code.
+3. Deschide index.html în browser (sau folosește extensia Live Server).
+4. Fotografiile sunt deja în folderul images.
+
+PREȚURI ȘI NUME
+Deschide script.js și caută lista `const products = [...]`.
+Pentru fiecare produs:
+- `name`: numele afișat în magazin
+- `price`: prețul în lei (de exemplu 35). Lasă null pentru „Preț la cerere”.
+- `oldPrice`: prețul vechi dacă există reducere; altfel null.
+- `category`: `coronite` sau `carti`.
+
+Fotografiile din arhivă au fost organizate în 6 cărți decorative și 4 coronițe,
+după imaginile furnizate. Dacă vrei să schimbi asocierea unei fotografii,
+modifică valoarea `image` pentru produsul respectiv.
+
+COȘ
+Coșul salvează produsele în browserul vizitatorului. Butonul „Pregătește comanda”
+copiază lista comenzii; nu procesează plăți online și nu trimite automat comanda.
